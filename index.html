@@ -44,50 +44,15 @@
                     <div class="intro-text left-0 text-center bg-faded p-5 rounded">
                         <h2 class="section-heading mb-4">
                             <span class="section-heading-lower">Absen Masuk</span>
-                            <span class="section-heading-upper">Silahkan Input Data</span>
+                            <span class="section-heading-upper"></span>
                         </h2>
-                        <section class="content-section bg-primary text-white callout" id="contact">
-                            <div class="container px-4 px-lg-5 text-center" data-aos="zoom-out-down">
-                             
-                              <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
-                                <strong>Thank You</strong> We have received your message
-                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                              </div>
-                              <div class="row justify-content-center">
-                                <div class="col-md-6">
-                                  <form name="submit-to-google-sheet">
-                                    <div class="mb-3">
-                                      <label for="nama" class="form-label">Nama</label>
-                                      <input type="nama" name="nama" class="form-control" id="nama" />
-                                      <form action="proses.php" method="post" enctype="multipart/form-data">
-                                        <p>Upload <input type='file' name='foto' /></p></form>
-                                      <div class="mb-3">
-                                        <label for="nama" class="form-label">Area Kerja</label>
-                                        <input type="nama" name="nama" class="form-control" id="nama" />
-                                      </div>
-                      
-                                      <div class="mb-3">
-                                        <label for="pesan" class="form-label">Shift</label>
-                                        <textarea class="form-control" name="pesan" id="pesan" rows="3"></textarea>
-                                      </div>
-                                    </div>
-                      
-                                    <button type="submit" class="btn btn-info btn-kirim">Submit</button>
-                                    <button class="btn btn-info btn-loading d-none" type="button" disabled>
-                                      <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                                      Loading...
-                                    </button>
-                                  </form>
-                                </div>
-                              </div>
-                            </div>
-                          </section>
-                          <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="#!">Visit Us Today!</a></div>
+                       
+                          <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="contact copy.html">Visit Us Today!</a></div>
                     </div>
                 </div>
             </div></section>
                     </div>
-                </div>
+                </div></section>
             </div>
         </section><br><br><br><br>
         
@@ -98,54 +63,19 @@
                     <div class="intro-text left-0 text-center bg-faded p-5 rounded">
                         <h2 class="section-heading mb-4">
                             <span class="section-heading-lower">Absen Pulang</span>
-                            <span class="section-heading-upper">Silahkan Input Data</span>
+                            <span class="section-heading-upper"></span>
                         </h2>
-                        <section class="content-section bg-primary text-white callout" id="contact">
-                            <div class="container px-4 px-lg-5 text-center" data-aos="zoom-out-down">
-                             
-                              <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
-                                <strong>Thank You</strong> We have received your message
-                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                              </div>
-                              <div class="row justify-content-center">
-                                <div class="col-md-6">
-                                  <form name="submit-to-google-sheet">
-                                    <div class="mb-3">
-                                      <label for="nama" class="form-label">Nama</label>
-                                      <input type="nama" name="nama" class="form-control" id="nama" />
-
-                      <form action="proses.php" method="post" enctype="multipart/form-data">
-      <p>Upload <input type='file' name='foto' /></p></form>
-                                      <div class="mb-3">
-                                        <label for="nama" class="form-label">Area Kerja</label>
-                                        <input type="nama" name="nama" class="form-control" id="nama" />
-                                      </div>
-                      
-                                      <div class="mb-3">
-                                        <label for="pesan" class="form-label">Comment</label>
-                                        <textarea class="form-control" name="pesan" id="pesan" rows="3"></textarea>
-                                      </div>
-                                    </div>
-                      
-                                    <button type="submit" class="btn btn-info btn-kirim">Submit</button>
-                                    <button class="btn btn-info btn-loading d-none" type="button" disabled>
-                                      <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                                      Loading...
-                                    </button>
-
-                                  </form>
-                                </div>
-                              </div>
-                            </div>
+                  
 
 
      
-                          </section>
-                          <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="#!">Visit Us Today!</a></div>
+                         
+                          <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="contact.html">Visit Us Today!</a></div>
                     </div>
-                </div>
+                </div> </section>
             </div></section>
         </section><br><br>
+
         <section class="page-section cta">
             <div class="container">
                 <div class="row">
@@ -170,28 +100,6 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         
-          <script>
-            const scriptURL = "16lYMzVbIWTt6ggNQcgRZHtmyoKoC3z4bRZdvf0AxdZ3zRi2hfzaQiDvj";
-            const form = document.forms["submit-to-google-sheet"];
-            const btnKirim = document.querySelector(".btn-kirim");
-            const btnLoading = document.querySelector(".btn-loading");
-            const alert = document.querySelector(".alert");
       
-            form.addEventListener("submit", (e) => {
-              e.preventDefault();
-              btnLoading.classList.toggle("d-none");
-              btnKirim.classList.toggle("d-none");
-      
-              fetch(scriptURL, { method: "POST", body: new FormData(form) })
-                .then((response) => {
-                  btnLoading.classList.toggle("d-none");
-                  btnKirim.classList.toggle("d-none");
-                  alert.classList.toggle("d-none");
-                  form.reset();
-                  console.log("Success!", response);
-                })
-                .catch((error) => console.error("Error!", error.message));
-            });
-          </script>
     </body>
 </html>
